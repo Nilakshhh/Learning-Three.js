@@ -16,7 +16,7 @@ scene.add(camera);
 const canvas= document.querySelector('.webgl');
 
 const renderer = THREE.WebGLRenderer({
-    canvas: canvas
+    canvas
 })
-
+renderer.setSize(sizes.width, sizes.height);
 renderer.render(scene, camera);
